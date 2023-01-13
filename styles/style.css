@@ -9,6 +9,47 @@ body {
     background: #F3F1FF;
 }
 
+.header {
+    display: flex;
+    height: 94px;
+    background: #562EFF;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo-title {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-left: 85px;
+    padding-top: 5px;
+}
+.logo-title img {
+    width: 40.42px;
+height: 51px;
+}
+
+.name {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+
+
+.navbar ul {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.navbar ul li {
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    list-style: none;
+}
+
+
 main {
     display: flex;
     flex-direction: column;
@@ -146,4 +187,82 @@ hr {
     padding-left: 15px;
     
 }
+
+/* Media Quaries */
+
+/* for mobile devices */
+
+
+@media only screen and (max-width: 688px) {
+
+    .container {
+        width: 100%;
+    }
+    .players, .blog-container, .courses {
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+    
+    .player, .blog {
+        flex-direction: column;
+    } 
+
+    .header {
+        height: 200px;
+        gap: 50px;
+    }
+
+    .logo-title {
+
+        align-items: center;
+        
+    }
+  
+    
+    .navbar ul {
+        
+        flex-direction: column-reverse;
+        gap: 5px;
+    }
+    
+   
+    
+    
+}
+
+/* Tablet Devices */
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+
+    .container {
+        width: 100%;
+    }
+    
+    .section-title {
+        text-align: center;
+    }
+
+    .players, .courses {
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+        justify-items: center;
+    }
+    
+    .blog-container {
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+
+    .player, .blog {
+        flex-direction: column;
+    } 
+
+    .courses {
+        flex-direction: column;
+    }
+
+}
+
+
+
 
