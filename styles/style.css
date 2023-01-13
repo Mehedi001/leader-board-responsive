@@ -43,10 +43,14 @@ height: 51px;
 }
 
 .navbar ul li {
+    
+    list-style: none;
+}
+
+.navbar ul li a {
     text-decoration: none;
     font-size: 16px;
     color: #FFFFFF;
-    list-style: none;
 }
 
 
@@ -198,9 +202,13 @@ hr {
     .container {
         width: 100%;
     }
-    .players, .blog-container, .courses {
+     .blog-container, .courses {
         grid-template-columns: repeat(1, 1fr);
         flex-direction: column;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .player, .blog {
@@ -242,16 +250,13 @@ hr {
         text-align: center;
     }
 
-    .players, .courses {
+    .players, .courses, .blog-container {
         grid-template-columns: repeat(2, 1fr);
         flex-direction: column;
         justify-items: center;
     }
     
-    .blog-container {
-        grid-template-columns: repeat(1, 1fr);
-       
-    }
+     
 
     .player, .blog {
         flex-direction: column;
